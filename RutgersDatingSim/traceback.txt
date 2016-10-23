@@ -1,26 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 221, in script
-    if isEngineer:
-  File "game/script.rpy", line 221, in <module>
-    if isEngineer:
-NameError: name 'isEngineer' is not defined
+  File "game/script.rpy", line 251, in script
+    with Move(.5)
+TypeError: Move() takes at least 3 arguments (1 given)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 221, in script
-    if isEngineer:
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\ast.py", line 1647, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\python.py", line 1670, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\python.py", line 1665, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 221, in <module>
-    if isEngineer:
-NameError: name 'isEngineer' is not defined
+  File "game/script.rpy", line 251, in script
+    with Move(.5)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\ast.py", line 1265, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\exports.py", line 1370, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2058, in do_with
+    clear=clear)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2717, in interact_core
+    new_widget=layers_root)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\curry.py", line 38, in __call__
+    **dict(self.kwargs.items() + kwargs.items()))
+TypeError: Move() takes at least 3 arguments (1 given)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749

@@ -1,37 +1,37 @@
-Sun Oct 23 06:10:04 2016
+Sun Oct 23 06:48:16 2016
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
  
 
-Bootstrap to the start of init.init took 0.07s
-Early init took 0.02s
-Loader init took 0.04s
+Bootstrap to the start of init.init took 0.10s
+Early init took 0.03s
+Loader init took 0.13s
 Loading error handling took 0.02s
-Loading script took 0.20s
+Loading script took 0.27s
 Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.10s
-Loading analysis data took 0.01s
+Running init code took 0.14s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Cedric\\AppData\\Roaming/RenPy/backups\\RutgersDatingSim':
-Dump and make backups. took 0.06s
+Dump and make backups. took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.250000
-Creating interface object took 0.03s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
+Init translation took 0.04s
+Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.03s
+Save screen analysis took 0.05s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save bytecode. took 0.04s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.00s
+Interface start took 0.01s
 
 primary display bounds: (0, 0, 1920, 1080)
 Windowed mode.
@@ -240,29 +240,27 @@ Extensions:
     GL_SUN_multi_draw_arrays
     GL_WIN_swap_hint
 Number of texture units: 8
-Using shader environment.
-Using copy RTT.
-Using gl renderer.
-Texture testing:
-- Hardware max texture size: 16384
+Using shader e384
 - 64px textures work.
 - 128px textures work.
 - 256px textures work.
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.30099987984s
+Total time until interface ready: 1.26099991798s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.018000 seconds.
-- Frame drawn at 0.033000 seconds.
-- Frame drawn at 0.050000 seconds.
-- Frame drawn at 0.066000 seconds.
-- 0.066000 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.01s
+- Frame drawn at 0.011000 seconds.
+- Frame drawn at 0.027000 seconds.
+- Frame drawn at 0.044000 seconds.
+- Frame drawn at 0.060000 seconds.
+- 0.060000 seconds to render 5 frames.
+The window was minimized.
+The window was r68000 seconds.
+- 0.068000 seconds to render 5 frames.
+Windowed mode.
+Screen sizes: virtual=(1280, 720) physical=(1600, 900) drawable=(1600, 900)
+ analysis took 0.02s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

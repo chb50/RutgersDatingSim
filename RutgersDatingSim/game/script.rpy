@@ -86,11 +86,13 @@ label start:
     
     scene black
     
-    "{i}Welcome to the Rutgers Love-iversity program! As part of our program, we will not only supplement you with a quality education,{/i}"
+    "{i}Welcome to the Rutgers Love-iversity program!{/i}"
     
-    "{i}education....{/i}"
+    "{i}As part of our program, we will not only supplement you with a quality education,{/i}"
     
-    "{i}but with an environment to find passion for others. -------------{/i}"
+    "{i}As part of our program, we will not only supplement you with an education,{/i}"
+    
+    "{i}\As part of our program, we will not only supplement you with an education, but with an environment to find passion for others.{/i}"
     
     scene bg collegeAve1
     with Dissolve(.5)
@@ -187,7 +189,7 @@ label start:
     
     hide avery Happy1Glasses
     show butch Neutral2
-    b "Yes, well... A bit excessive, but regardless, nice to meet you"
+    b "Yes, well... A bit excessive, but regardless, nice to meet you."
     
     hide butch Neutral2
     show butch Happy1
@@ -221,16 +223,43 @@ label start:
     
     hide cadee Worried1
     show butch Worried1
-    b "Well then, Cadee, it's nice to meet you as well"
+    b "Well then, Cadee, it's nice to meet you as well..."
     
     show butch Happy1
     b "With that done, shall we start our little tour of the campus?"
-    
-    #NEED TO INTRODUCE OTHER CHARACTERS##
-    
+
     hide butch
     scene black
     with Dissolve(.5)
+    
+    scene bg collegeAve2
+    with Fade(.5,0.0,0.5)
+    
+    pause 1.5
+    
+    scene bg busch2
+    with Fade(.5,0.0,0.5)
+
+    pause 1.5
+    
+    show bg livi1
+    with Fade(.5,0.0,.5)
+    
+    pause 1.5
+    
+    show bg douglass1
+    with Fade(.5,0.0,.5)
+    
+    pause 1.5
+    
+    scene black
+    with Dissolve(.5)
+    
+    "I don’t really know anybody that well…"
+    
+    "But I’m excited to start school in the fall!"
+    
+    " "
     
     #END PROLOGUE
     
@@ -239,14 +268,17 @@ label start:
     
     ##BUTCH ROUTE (ROUTE H)##
     #BEGIN SCENE 1
-    
-    "THIS IS A TEST"
-    
+        
     label butchroute:
+    
+    #Fade out music
+    #Add in school bell sound
     
     "{i}A couple of months later...{/i}"
     scene bg busch1
     with Dissolve(.5)
+    
+    #Start new music
     
     "I have my first lab class today. Let’s see… it’s called…"
 
