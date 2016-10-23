@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 68: expecting name after dot.
-    linear 1.0 xzoom1.25 yzoom .75
-                      ^
+File "game/script.rpy", line 360: expected ':' not found.
+    label quest1
+                ^
 
 Ren'Py Version: Ren'Py 6.99.11.1749
