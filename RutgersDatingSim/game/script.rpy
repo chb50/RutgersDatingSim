@@ -46,6 +46,7 @@ image bg class1 = "bg_Class1.jpg"
 image bg library1 = "bg_library1.jpg"
 image bg theater1 = "bg_Theater1.jpg"
 image bg lab1 = "bg_Lab1.jpg"
+image bg office1 = "bg_Office1.jpg"
 
 #olivia
 image olivia Speaking1 = "olivia_speaking1.png"
@@ -72,6 +73,11 @@ image butch Confused2 = "butch_confused2.png"
 image butch Thinking1 = "butch_thinking1.png"
 image butch Thinking2 = "butch_thinking2.png"
 image butch Worried1 = "butch_worried1.png"
+image butch Worried2 = "butch_worried2.png"
+image butch HappyBlush1 = "butch_happyblush1.png"
+image butch SadBlush1 = "butch_sadblush1.png"
+image butch ConfusedBlush1 = "butch_confusedblush1.png"
+image butch ThinkingBlush1 = "butch_thinkingblush1.png"
 
 #player character
 define user = Character(_("[userName]"), color = "#ff9900")
@@ -542,7 +548,163 @@ label start:
     
     #END SCENE 3
     
+    scene black
+    with Dissolve(.5)
     
+    #BEGIN SCENE 4
+    
+    "{i}time passes, it is now Wednesday, office hours{/i}"
+    
+    scene bg office1
+    with Dissolve(.5)
+    
+    "Hm… I guess this is Butch’s office? It’s kind of cool that a TA gets his own office."
+    
+    scene black
+    with Dissolve(.5)
+    
+    "{i}Some more time passes, and you become increacingly impatient{/i}"
+    
+    scene bg office1
+    with Dissolve(.5)
+    
+    "Where is he?! It’s been over half an hour since office hours were supposed to start..."
+    
+    "{i}At last, Butch stumbles in{/1}"
+    
+    show butch Worried2
+    b "Sorry I’m late! I was working on a project."
+    
+    menu:
+        "Oh, it’s cool. I just got here myself. Whatever.":
+            jump state1
+        "What kind of project?":
+            jump state2
+        "Geez, have some consideration for your students.":
+            jump state3
+    
+    label state1:
+        user "Oh, it’s cool. I just got here myself. Whatever."
+        
+        show butch Happy1
+        b "Oh, really? What a coincidence!"
+        
+        "He really has no remorse..."
+        
+        show butch Neutral1
+        b "So, should we get started?"
+        
+        jump afterOH
+    label state2:
+        user "What kind of project?"
+        
+        show butch Neutral1
+        b "Oh, just something I’ve been playing with when I have down time."
+        
+        "Office hours isn’t really your down time..."
+        
+        b "So, should we get started?"
+        
+        jump afterOH
+        
+    label state3:
+        user "Geez, have some consideration for your students."
+        
+        show butch Happy2
+        b "Haha, sorry. It won’t happen again."
+        
+        user "It had better not."
+        
+        show butch ConfusedBlush1
+        b "!"
+        
+        show butch SadBlush1
+        b "..."
+        
+        b "Sorry. I didn’t mean to waste your time."
+        
+        user "...it’s fine."
+        
+        show butch Neutral1
+        
+        b "So, should we get started?"
+        
+        jump afterOH
+        
+    
+    label afterOH:
+    
+    scene black
+    with Dissolve(.5)
+    
+    "{i}After what seems to be an eternity...{/i}"
+    
+    scene bg office1
+    with Dissolve(.5)
+    
+    show butch Neutral1
+    user "I actually think I understand everything now!"
+    
+    show butch Happy1
+    b "Good, I’m glad."
+    
+    user "You’re really smart, huh?"
+    
+    show butch HappyBlush1
+    b "Oh, do you think so?"
+    
+    user "Yeah, I wouldn’t have been able to understand any of this without you...r help."
+    
+    show butch ThinkingBlush1
+    b "!"
+    
+    "I kind of want to go home, but I’m a little curious..."
+    
+    menu:
+        "So what was that project you were working on?":
+            jump bquest
+        "Well, I have to go now.":
+            jump bnoquest
+    
+    label bquest:
+        show butch Neutral1
+        user "So what was that project you were working on?"
+        
+        show butch Thinking1
+        b "I’ve been developing this... enhancer..."
+        
+        user "...Enhancer?"
+        
+        show butch Neutral1
+        b "It’s probably easier if I just show you."
+        
+        user "???"
+        
+        b "Follow me"
+        
+        user "All right. Where are we going?"
+        
+        b "This way."
+        
+        "That didn’t answer my question!"
+        
+        "{i}You follow Butch...{/i}"
+        jump scene4end
+    label bnoquest:
+        user "Well, I have to go now."
+        
+        show butch Neutral2
+        b "Oh, okay. See you next class."
+        
+        user "Okay. Bye."
+        
+        "{i}You go home{/i}."
+        jump end #this jump is NOT permanent!
+        
+
+    label scene4end:
+        scene black
+        with Dissolve(.5)
 
     ## This ends the game.
     

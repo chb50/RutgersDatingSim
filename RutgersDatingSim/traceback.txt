@@ -1,28 +1,34 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 251, in script
-    with Move(.5)
-TypeError: Move() takes at least 3 arguments (1 given)
+  File "game/script.rpy", line 588, in script
+    show butch Happy1
+  File "renpy/common/00placeholder.rpy", line 194, in _duplicate
+    rv.name = list(args.name) + list(args.args)
+AttributeError: 'NoneType' object has no attribute 'name'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 251, in script
-    with Move(.5)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\ast.py", line 1265, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\exports.py", line 1370, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2058, in do_with
-    clear=clear)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2496, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 2717, in interact_core
-    new_widget=layers_root)
-  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\curry.py", line 38, in __call__
-    **dict(self.kwargs.items() + kwargs.items()))
-TypeError: Move() takes at least 3 arguments (1 given)
+  File "game/script.rpy", line 588, in script
+    show butch Happy1
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\ast.py", line 1064, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\ast.py", line 1036, in show_imspec
+    atl=atl)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\exports.py", line 647, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\core.py", line 962, in add
+    thing = sle.displayable._change_transform_child(thing)
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\transform.py", line 724, in _change_transform_child
+    rv = self.copy()
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\transform.py", line 714, in copy
+    d = self()
+  File "C:\Users\Cedric\Documents\renpy-6.99.11-sdk\renpy\display\transform.py", line 858, in __call__
+    child = child._duplicate(_args)
+  File "renpy/common/00placeholder.rpy", line 194, in _duplicate
+    rv.name = list(args.name) + list(args.args)
+AttributeError: 'NoneType' object has no attribute 'name'
 
 Windows-8-6.2.9200
 Ren'Py 6.99.11.1749
