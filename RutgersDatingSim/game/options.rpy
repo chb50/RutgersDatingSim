@@ -144,7 +144,7 @@ define config.save_directory = "RutgersDatingSim-1477166534"
 
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "baka_rutgers.png"
 
 
 ## Build configuration #########################################################
