@@ -1,0 +1,9 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 68: expecting name after dot.
+    linear 1.0 xzoom1.25 yzoom .75
+                      ^
+
+Ren'Py Version: Ren'Py 6.99.11.1749
