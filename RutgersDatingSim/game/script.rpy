@@ -4,11 +4,12 @@
 ## of the character.
 
 ##characters##
+
 #major characters
-define o = Character('Olivia')
+define o = Character(_('Olivia'), color = "#3366ff")
 define a = Character('Avery')
 define b = Character('Butch')
-define c = Character('Cadee')
+define c = Character(_('Cadee'), color = "#009933")
 
 #side characters
 
